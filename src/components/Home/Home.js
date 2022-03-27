@@ -25,7 +25,7 @@ export const Home = () => {
             <img
               className="quiz-image"
               src={logo}
-              alt="quiz-image"
+              alt="quiz"
             />
           </div>
         </div>
