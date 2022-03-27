@@ -1,0 +1,26 @@
+.footer {
+    text-align: center;
+    background: var(--footer-color);
+    margin-top: 5rem;
+    font-size: 1.8rem;
+    padding: 1.8rem;
+    color: var(--bg-code);
+    /* width: 100%; */
+  }
+  .footer-login{
+    margin-top: 14rem;
+  }
+  .link-social {
+    margin: 1rem;
+  }
+  .nav-pills .icon{
+    padding: 8px;
+    font-size: 2.3rem;
+    color: var(--bg-code);
+  }
+  .nav-pills .icon:hover {
+    color: var(--text-color);
+  } 
+  span.footer-copyright {
+    font-size: 1.5rem;
+  }
