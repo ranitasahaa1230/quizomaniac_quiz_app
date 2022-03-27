@@ -3,29 +3,29 @@ import "./Footer.css"
 
 export const Footer = () => {
   return (
-        <footer class="footer">
+        <footer className="footer">
         <div>Made with 💕 by Ranita Saha</div>
-        <div class="link-social">
+        <div className="link-social">
           <a
             href="https://github.com/ranitasahaa1230/Quizomaniac"
             target="_blank"
-            class="nav-pills"
-            ><i class="fab fa-github icon"></i
+            className="nav-pills"
+            ><i className="fab fa-github icon"></i
           ></a>
           <a
             href="https://twitter.com/Ifullofsunshine"
             target="_blank"
-            class="nav-pills"
-            ><i class="fab fa-twitter icon"></i
+            className="nav-pills"
+            ><i className="fab fa-twitter icon"></i
           ></a>
           <a
             href="https://www.linkedin.com/in/saharanitaa1230dreamer/"
             target="_blank"
-            class="nav-pills"
-            ><i class="fab fa-linkedin icon"></i
+            className="nav-pills"
+            ><i className="fab fa-linkedin icon"></i
           ></a>
         </div>
-        <span class="footer-copyright">© 2022 || Quizomaniac</span>
+        <span className="footer-copyright">© 2022 || Quizomaniac</span>
       </footer>
   )
 }
