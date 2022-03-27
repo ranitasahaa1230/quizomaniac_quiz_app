@@ -15,8 +15,8 @@ export const Categories = () => {
               <div className="desc">{product.description}
               </div>
               <div className="card__desc">
-                <div className="desc__span">2 Questions</div>
-                <Link to="/quiz"><button className="text">TAKE QUIZ</button></Link>
+                <div className="desc__span">10 Questions</div>
+                <Link to="/category"><button className="text">TAKE QUIZ</button></Link>
               </div>
                 </div>
               ))}
