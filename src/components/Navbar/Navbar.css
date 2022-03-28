@@ -13,7 +13,7 @@ header {
   }
   
   header .logo {
-    font-size: 1.9rem;
+    font-size: 1.65rem;
     background: -webkit-linear-gradient(var(--blue-color), var(--bg-code));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

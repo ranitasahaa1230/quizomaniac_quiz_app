@@ -14,7 +14,7 @@
     flex-wrap: wrap;
   }
   .card {
-    width: 19rem;
+    width: 18rem;
     margin: 1rem;
     overflow: hidden;
     height: max-content;
@@ -24,7 +24,7 @@
     box-shadow: 0 0 12px 2px var(--primary-color);
   }
   .card__img{
-    width: 19rem;
+    width: 18rem;
     height: 13rem;
   }
   .card__desc {

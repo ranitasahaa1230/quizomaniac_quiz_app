@@ -1,0 +1,7 @@
+.error-message{
+    background: var(--filled-red);
+    color: var(--bg-code);
+    padding: 0.6rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
