@@ -2,27 +2,26 @@ import { MenuItem, TextField } from "@material-ui/core";
 import React, { useState } from "react";
 import Categories from "../../assets/images/data";
 import "./Category.css"
-import { Link } from 'react-router-dom'
+import { useNavigate} from 'react-router-dom'
 import {Error} from "../index";
 
-export const Category = () => {
-    const [names,setNames]=useState('');
+export const Category = ({names,setNames,fetchQuestions}) => {
     const [categories,setCategories]=useState('');
     const [difficulty,setDifficulty]=useState('');
     const [error,setError]=useState(false);
+    const navigate = useNavigate();
 
-    const fetchQuestions=()=>{
-
-    }
     const handleSubmit=()=>{
         if(!names || !categories || !difficulty){
             setError(true)
         }
         else{
             setError(false)
-            fetchQuestions();
+            fetchQuestions(categories,difficulty);
+            navigate("/rulespage")
         }
     }
+    
   return (
     <div className="settings">
       <div className="settings__select">
@@ -53,9 +52,7 @@ export const Category = () => {
         <MenuItem key="Medium" value="medium">Medium</MenuItem>
         <MenuItem key="Hard" value="hard">Hard</MenuItem>
         </TextField>
-        <Link to="">
                 <button className="explore-btn btns-explore" onClick={handleSubmit}>Start Quiz</button>
-        </Link>
       </div>
     </div>
   );

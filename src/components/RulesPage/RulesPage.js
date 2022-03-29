@@ -7,7 +7,7 @@ export const RulesPage = () => {
   return (
     <div class="rules__page">
       <div className="rules__images">
-        <img src={rules} className="rules__image"/>
+        <img src={rules} className="rules__image" alt="rules"/>
       </div>
       <div class="rules__section">
       <h2 class="rules">Rules To Follow!</h2>
@@ -32,7 +32,7 @@ export const RulesPage = () => {
           <i class="fas fa-star star star__5"></i>Don't plagarize. Try to answer on your own
         </li>
         <div class="text__btn">
-          <Link to="">
+          <Link to="/quiz">
             <button class="text">START QUIZ</button>
           </Link>
         </div>
