@@ -15,7 +15,7 @@ export const Quiz = ({ names, scores, setScores, questions, setQuestions }) => {
           ...questions[currQues]?.incorrect_answers,
         ])
     );
-  }, [currQues, questions]);
+  }, [questions]);
 
   console.log(options);
   const handleShuffle = (option) => {
