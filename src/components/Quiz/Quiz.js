@@ -17,7 +17,7 @@ export const Quiz = ({ names, scores, setScores, questions, setQuestions }) => {
     );
   }, [currQues,questions]);
 
-  console.log(options);
+//   console.log(options);
   const handleShuffle = (option) => {
     return option.sort(() => Math.random() - 0.5);
   };
@@ -28,7 +28,7 @@ export const Quiz = ({ names, scores, setScores, questions, setQuestions }) => {
       {questions ? (
         <>
         <div class="question__flex">
-          <h4><span class="question__bold">{questions[currQues].category}</span></h4>
+          <span class="question__bold">{questions[currQues].category}</span>
           <h3>SCORE : <span class="question__bold">{scores}</span></h3>
         </div>
           <Questions 
