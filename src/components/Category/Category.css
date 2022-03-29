@@ -1,0 +1,20 @@
+.settings{
+    margin-top: 6.5rem;
+}
+.settings__select{
+ display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin:auto;
+  width: 60%;
+  flex: 0.5;
+  justify-content: space-evenly;
+  gap: 1.6rem;
+  border: 2px solid var(--darkblue-bg);
+}
+
+.btns-explore{
+    width: 80%;
+    border-radius: 12px !important; 
+    margin: 1rem 2.5rem !important;
+}

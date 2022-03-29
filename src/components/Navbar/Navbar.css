@@ -5,15 +5,15 @@ header {
     right: 0;
     z-index: 1000;
     background: var(--primary-color);
-    padding: 1.5rem 4%;
+    padding: 1rem 4%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 8px 12px var(--black-bg);
+    box-shadow: 0 5px 12px var(--black-bg);
   }
   
   header .logo {
-    font-size: 2.5rem;
+    font-size: 1.65rem;
     background: -webkit-linear-gradient(var(--blue-color), var(--bg-code));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -22,7 +22,7 @@ header {
   }
   
   header .navbar a {
-    font-size: 1.7rem;
+    font-size: 1.15rem;
     color: var(--bg-code);
     margin: 0 1rem;
   }
@@ -34,9 +34,9 @@ header {
   header .class-form {
     display: flex;
     align-items: center;
-    width: 40rem;
+    width: 28rem;
     border-radius: 5rem;
-    height: 4rem;
+    height: 2.4rem;
     border: 2px solid var(--bg-code);
     background: var(--bg-code);
     overflow: hidden;
@@ -45,13 +45,13 @@ header {
     width: 100%;
     height: 100%;
     background: none;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: var(--primary-color);
     padding: 0 2rem;
     text-transform: none;
   }
   header form .search-label {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     padding-right: 2rem;
     color: var(--black-bg);
     cursor: pointer;
@@ -62,7 +62,7 @@ header {
   }
   
   header .font-icons a {
-    font-size: 2.2rem;
+    font-size: 1.45rem;
     color: var(--bg-code);
     margin-left: 2rem;
   }
@@ -75,11 +75,11 @@ header {
     align-items: center;
   }
   .logo-design {
-    width: 4rem;
+    width: 2.2rem;
   }
   
   .menu-bar {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     padding: 0.5rem 1.5rem;
     border: 2px solid var(--black-bg);
     color: var(--bg-code);
@@ -89,7 +89,7 @@ header {
   }
   
   .social-quizicons {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
     padding: 4px;
     color: var(--secondary-color);
     cursor: pointer;

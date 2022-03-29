@@ -1,5 +1,5 @@
-main-quiz{
-    margin-top: 12rem;
+.main-quiz{
+    margin-top: 2rem;
     
   }
   .categories,
@@ -14,8 +14,8 @@ main-quiz{
     flex-wrap: wrap;
   }
   .card {
-    width: 28rem;
-    margin: 2rem;
+    width: 18rem;
+    margin: 1rem;
     overflow: hidden;
     height: max-content;
     outline: none;
@@ -24,33 +24,34 @@ main-quiz{
     box-shadow: 0 0 12px 2px var(--primary-color);
   }
   .card__img{
-    width: 28rem;
-    height: 20rem;
+    width: 18rem;
+    height: 13rem;
   }
   .card__desc {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 5px;
-    margin-right: 2rem;
+    padding: 2px;
+    margin-right: 1.6rem;
     flex-wrap: wrap;
   }
   .desc {
-    font-size: 1.6rem;
-    padding: 0 10px;
+    font-size: 1.1rem;
+    padding: 0 8px;
     margin-bottom: 6px;
   }
   .desc__span {
-    font-size: 1.8rem;
-    padding: 10px;
+    font-size: 1.2rem;
+    padding: 4px 10px;
   }
   .text {
     margin-left: auto;
     color: var(--bg-code);
     background: var(--primary-color);
     border: none;
-    padding: 12px 20px;
-    font-size: 1.5rem;
+    padding: 10px 14px;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
     border-radius: 25px;
     cursor: pointer;
     opacity: 0.8;
