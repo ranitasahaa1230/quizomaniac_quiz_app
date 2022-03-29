@@ -19,7 +19,7 @@ export const Navbar = () => {
           <Link to="/" className="href">
             <i className="fas fa-home social-quizicons"></i>Home
           </Link>
-          <Link to="./pages/scoreboard.html" className="href">
+          <Link to="#" className="href">
             <i className="fas fa-chart-line social-quizicons"></i>Dashboard
           </Link>
         </nav>
@@ -36,11 +36,11 @@ export const Navbar = () => {
 
         <div className="font-icons">
           <Link
-            to="./pages/login.html"
+            to="./login"
             className="fa-solid fa-right-to-bracket social-quizicons"
           ></Link>
           <Link
-            to="./pages/profile.html"
+            to="/signup"
             className="fas fa-user social-quizicons"
           ></Link>
         </div>
