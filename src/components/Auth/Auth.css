@@ -1,0 +1,95 @@
+.form-box {
+    width: 100%;
+    max-width: 32rem;
+    position: relative;
+    top: 3rem;
+    margin: 5rem auto;
+    padding: 12px 0;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 0 var(--primary-color);
+  }
+  .button-box {
+    margin: 0.5rem;
+    text-align: center;
+    position: relative;
+  }
+  .toggle-btn {
+    padding: 4px 0;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+  }
+
+  .input-group {
+    transition: 0.5s;
+    margin: 0 2rem;
+  }
+  
+  .input-fields {
+    display: block;
+    width: 82%;
+    margin: 4px 2rem;
+    border: 1px solid var(--gray);
+    background: transparent;
+    border-radius: 0.2rem;
+    color: var(--black-bg);
+    padding: 0.5rem 0.7rem;
+    font-size: 1rem;
+  }
+   
+  .password-label{
+    width: 100%;
+    display: block;
+    margin: 0.5rem 2.5rem;
+    font-size: 1rem;
+  }
+
+  .password-label::after {
+    content: "*";
+    color: var(--filled-red);
+}
+.submit-loginbtns {
+    width: 18rem;
+    display: block;
+    cursor: pointer;
+    padding: 10px 3rem;
+    margin: 0.5rem 4.5rem;
+    background: var(--primary-color);
+    border: 0;
+    outline: none;
+    color: var(--bg-code);
+    border-radius: 0.8rem;
+    font-size: 1.1rem;
+  }
+  .submit-loginbtns:hover {
+    opacity: 0.9;
+  }
+  input.check-box {
+    margin: 1rem 0.5rem 1rem 2.5rem;
+    width: 1rem;
+    height: 1rem;
+  }
+  span.check-psswd {
+    color: var(--black-bg);
+    font-size: 1rem;
+  }
+  .checkbox-block{
+      display: flex;
+      align-items: center;
+  }
+  .input-account {
+    padding: 10px;
+    font-size: 1rem;
+    color: var(--black-bg);
+    margin: 0 0 0.2rem 2.5rem;
+  }
+  .primary-account {
+    color: var(--black-bg);
+    text-decoration: none;
+    border-bottom: 2px solid var(--primary-color);
+    margin-left: 0.5rem;
+  }
+  .forget-psswd{
+      color: var(--primary-color);
+      font-size: 1rem;
+      margin-left: 4rem;
+  }

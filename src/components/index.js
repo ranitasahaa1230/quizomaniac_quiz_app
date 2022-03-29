@@ -6,6 +6,8 @@ export { Category } from "./Category/Category";
 export { Quiz } from "./Quiz/Quiz";
 export { Error } from "./Error/Error";
 export { RulesPage } from "./RulesPage/RulesPage";
+export { Login } from "./Auth/Login";
+export { SignUp } from "./Auth/SignUp";
 
 
 
