@@ -1,6 +1,6 @@
 import { MenuItem, TextField } from "@material-ui/core";
 import React, { useState } from "react";
-import Categories from "../Categories/data";
+import Categories from "../../assets/images/data";
 import "./Category.css"
 import { Link } from 'react-router-dom'
 import {Error} from "../index";

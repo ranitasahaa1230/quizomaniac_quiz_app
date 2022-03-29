@@ -5,5 +5,7 @@ export { Categories } from "./Categories/Categories";
 export { Category } from "./Category/Category";
 export { Quiz } from "./Quiz/Quiz";
 export { Error } from "./Error/Error";
+export { RulesPage } from "./RulesPage/RulesPage";
+
 
 

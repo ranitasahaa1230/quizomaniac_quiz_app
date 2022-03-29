@@ -36,9 +36,10 @@ body {
   --blue-bg: #cfe2ff;
   --black-bg: #000814;
   --green-bg: #84f1c9;
-  --red-bg:#dc3545;
+  --red-bg: #dc3545;
   --yellow-bg: #ffe7c5;
   --footer-color: #403747;
+  --rules:rgb(149, 54, 238);
 }
 
 ::-webkit-scrollbar {
@@ -59,7 +60,7 @@ a {
   text-decoration: none;
   color: var(--gray);
 }
-h2{
+h2 {
   font-size: 2.1rem;
 }
 h3,
@@ -72,11 +73,10 @@ h3 {
 }
 
 @media (max-width: 991px) {
- 
   header {
     padding: 1.6rem;
   }
-  section{
+  section {
     padding: 1.6rem;
   }
 }
@@ -110,20 +110,28 @@ h3 {
     font-weight: 800;
   }
 
-  header, .profile-section,.profile-name{
+  header,
+  .profile-section,
+  .profile-name {
     flex-flow: column;
   }
-.profile-name{
-  gap: 2rem;
-}
+  .profile-name {
+    gap: 2rem;
+  }
   header .class-form {
     width: 100%;
     margin: 1.5rem 0;
   }
-  section, .form-box{
+  section,
+  .form-box {
     margin-top: 18rem;
   }
-  .main-quiz, .rules__section, .section__question, .answer__section, .profile-section,.score-board{
+  .main-quiz,
+  .rules__section,
+  .section__question,
+  .answer__section,
+  .profile-section,
+  .score-board {
     margin-top: 20rem;
   }
 }
