@@ -9,5 +9,5 @@ export const Quiz = ({
   questions,
   setQuestions,
 }) => {
-  return <div>Quiz</div>;
+  return <div>Quiz Page</div>;
 };
