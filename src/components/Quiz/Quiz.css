@@ -1,21 +1,22 @@
-.quiz__page{
-    margin-top: 5.5rem;
+.quiz__page {
+  margin-top: 5.5rem;
+  color: var(--gray);
 }
 
-.quiz__name{
-    text-align: center;
-    color: var(--black-bg);
-    font-size: 1.7rem;
-    font-weight: bolder;
+.quiz__name {
+  text-align: center;
+  color: var(--black-bg);
+  font-size: 1.7rem;
+  font-weight: bolder;
 }
 .question__flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    opacity: 0.8;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0.8;
+}
 
-  .question__bold {
-    font-size: 3rem;
-    color: var(--black-bg);
-  }
+.question__bold {
+  font-size: 1.5rem;
+  color: var(--black-bg);
+}
