@@ -9,10 +9,10 @@ function App() {
   const [questions, setQuestions] = useState("");
   const [scores, setScores] = useState(0);
 
-  const fetchQuestions = async (categories = "", difficulty = "") => {
+  const fetchQuestions = async (category = "", difficulty = "") => {
     const { data } = await axios.get(
       `https://opentdb.com/api.php?amount=10${
-        categories && `&category=${categories}`
+        category && `&category=${category}`
       }${difficulty && `&difficulty=${difficulty}`}&type=multiple`
     );
     // console.log(data.results)

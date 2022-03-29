@@ -8,3 +8,14 @@
     font-size: 1.7rem;
     font-weight: bolder;
 }
+.question__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0.8;
+  }
+
+  .question__bold {
+    font-size: 3rem;
+    color: var(--black-bg);
+  }
