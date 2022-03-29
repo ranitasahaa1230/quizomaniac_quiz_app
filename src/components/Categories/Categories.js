@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 export const Categories = () => {
   return (
-    <main className="main-quiz">
+    <main className="main-quiz" id='main-quiz'>
           <h2 className="categories">Categories</h2>
           <div className="card__flex">
               {data.map((product)=>(
