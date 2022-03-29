@@ -1,0 +1,10 @@
+.quiz__page{
+    margin-top: 5.5rem;
+}
+
+.quiz__name{
+    text-align: center;
+    color: var(--black-bg);
+    font-size: 1.7rem;
+    font-weight: bolder;
+}

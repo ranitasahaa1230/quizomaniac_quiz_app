@@ -8,6 +8,7 @@ export { Error } from "./Error/Error";
 export { RulesPage } from "./RulesPage/RulesPage";
 export { Login } from "./Auth/Login";
 export { SignUp } from "./Auth/SignUp";
+export { Questions } from "./Questions/Questions";
 
 
 

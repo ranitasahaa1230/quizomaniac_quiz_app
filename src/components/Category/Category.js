@@ -18,7 +18,7 @@ export const Category = ({names,setNames,fetchQuestions}) => {
         else{
             setError(false)
             fetchQuestions(categories,difficulty);
-            navigate("/rulespage")
+            navigate("/quiz")
         }
     }
     

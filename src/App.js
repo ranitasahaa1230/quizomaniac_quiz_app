@@ -15,6 +15,7 @@ function App() {
         categories && `&category=${categories}`
       }${difficulty && `&difficulty=${difficulty}`}&type=multiple`
     );
+    // console.log(data.results)
     setQuestions(data.results);
   };
 
@@ -33,13 +34,12 @@ function App() {
             />
           }
         />
-        <Route path="/rulespage" element={<RulesPage />} />
+        {/* <Route path="/rulespage" element={<RulesPage />} /> */}
         <Route
           path="/quiz"
           element={
             <Quiz
               names={names}
-              setNames={setNames}
               scores={scores}
               setScores={setScores}
               questions={questions}
