@@ -34,7 +34,7 @@ function App() {
             />
           }
         />
-        {/* <Route path="/rulespage" element={<RulesPage />} /> */}
+        <Route path="/rulespage" element={<RulesPage />} />
         <Route
           path="/quiz"
           element={
