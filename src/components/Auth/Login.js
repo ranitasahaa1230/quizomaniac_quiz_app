@@ -29,7 +29,7 @@ export function Login() {
           <span className="forget-psswd">Forgot Your Password?</span>
           </Link>
        </div>
-        <button type="submit" className="submit-loginbtns">Login</button>
+        <button type="submit" className="submit-loginbtns">LOGIN</button>
         <div className="input-account">
           Not a user yet?
             <Link to="/signup" className="primary-account"
