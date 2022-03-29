@@ -25,7 +25,7 @@ export function Login() {
        <input type="checkbox" className="check-box" />
        <span className="check-psswd"
           >Remember Me</span>
-          <Link to="/">
+          <Link to="#">
           <span className="forget-psswd">Forgot Your Password?</span>
           </Link>
        </div>
