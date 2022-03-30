@@ -1,37 +1,32 @@
 export const data = [
     {
       id: 1,
-      category: "TRAVEL",
-      description: "Take part in the amazing quiz and test your knowledge in Travel",
-      img: "https://github.com/ranitasahaa1230/Quizomaniac/blob/a4e384bc5f65022259438ec6ef5500b88a376cde/images/travel.jpg?raw=true",
-      alt:"travel",
+      category: "BOOKS",
+      description: "Take part in the amazing quiz and test your knowledge in Books",
+      img: "https://img.freepik.com/free-photo/wooden-table_36051-46.jpg?w=1060",
+      alt:"books",
     },
     {
       id: 2,
-      category: "FASHION",
-      description: "Take part in the amazing quiz and test your knowledge in Fashion",
+      category: "Films",
+      description: "Take part in the amazing quiz and test your knowledge in Films",
       img: "https://github.com/ranitasahaa1230/Quizomaniac/blob/a4e384bc5f65022259438ec6ef5500b88a376cde/images/fashion.jpg?raw=true",
-      alt:"fashion",
+      alt:"films",
     },
     {
       id: 3,
-      category: "FOOD",
-      description: "Take part in the amazing quiz and test your knowledge in Food",
-      img: "https://github.com/ranitasahaa1230/Quizomaniac/blob/a4e384bc5f65022259438ec6ef5500b88a376cde/images/food.jpg?raw=true",
-      alt:"food",
+      category: "SCIENCE & NATURE",
+      description: "Take part in the amazing quiz and test your knowledge in Science",
+      img: "https://img.freepik.com/free-vector/rocket-flying-past-earth_1308-74383.jpg?t=st=1648624808~exp=1648625408~hmac=b24c58cb7c17a7027bd18ef0246e2a524dd7711ab75b506ec18a8621de918a31&w=1060",
+      alt:"nature",
     },
     {
       id: 4,
-      category: "sunglasses",
-      description: "",
-      img:"",
-      alt: "",
+      category: "SPORTS",
+      description: "Take part in the amazing quiz and test your knowledge in Sports",
+      img:"https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?t=st=1648620396~exp=1648620996~hmac=98b9c75b7140092ab34694d5ce3b8bd444c96345d1314abadf51907d1ce93007&w=996",
+      alt: "sports",
     },
-    // {
-    //   id: 5,
-    //   item: "gloves",
-    //   quantity: 1
-    // }
   ];
   
 
@@ -55,6 +50,7 @@ export const data = [
     { category: "Geography", value: 22 },
     { category: "History", value: 23 },
     { category: "Politics", value: 24 },
+    // { category: "Art", value: 25 },
     { category: "Celebrities", value: 26 },
     { category: "Animals", value: 27 },
     { category: "Vehicles", value: 28 },
