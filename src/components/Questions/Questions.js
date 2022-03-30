@@ -18,15 +18,15 @@ export const Questions = ({
   const [error, setError] = useState(false);
   const navigate = useNavigate();
 
-  const handleSelect = (i) => {
-    if (selected === i && selected === correct) return "select";
-    else if (selected === i && selected !== correct) return "wrong";
-    else if (i === correct) return "select";
+  const handleSelect = (option) => {
+    if (selected === option && selected === correct) return "select";
+    else if (selected === option && selected !== correct) return "wrong";
+    else if (option === correct) return "select";
   };
 
-  const handleCheck = (i) => {
-    setSelected(i);
-    if (i === correct) setScores(scores + 1);
+  const handleCheck = (option) => {
+    setSelected(option);
+    if (option === correct) setScores(scores + 1);
     setError(false);
   };
 

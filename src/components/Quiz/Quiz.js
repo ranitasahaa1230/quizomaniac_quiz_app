@@ -7,8 +7,8 @@ export const Quiz = ({ names, scores, setScores, questions,setQuestions}) => {
     const [options, setOptions] = useState();
     const [currQues, setCurrQues] = useState(0);
   
-    const handleShuffle = (options) => {
-        return options.sort(() => Math.random() - 0.5);
+    const handleShuffle = (optionss) => {
+        return optionss.sort(() => Math.random() - 0.5);
       };
   
    useEffect(() => {
