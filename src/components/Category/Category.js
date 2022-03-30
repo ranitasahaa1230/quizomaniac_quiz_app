@@ -6,18 +6,18 @@ import { useNavigate} from 'react-router-dom'
 import {Error} from "../index";
 
 export const Category = ({names,setNames,fetchQuestions}) => {
-    const [categories,setCategories]=useState('');
+    const [category,setCategory]=useState('');
     const [difficulty,setDifficulty]=useState('');
     const [error,setError]=useState(false);
     const navigate = useNavigate();
 
     const handleSubmit=()=>{
-        if(!names || !categories || !difficulty){
+        if(!category || !difficulty || !names){
             setError(true)
         }
         else{
             setError(false)
-            fetchQuestions(categories,difficulty);
+            fetchQuestions(category,difficulty);
             navigate("/rulespage")
         }
     }
@@ -31,8 +31,8 @@ export const Category = ({names,setNames,fetchQuestions}) => {
         <TextField
           select
           label="Select Category"
-          value={categories}
-          onChange={(e) => setCategories(e.target.value)}
+          value={category}
+          onChange={(e) => setCategory(e.target.value)}
           variant="outlined"
         >
           {Categories.map((type) => (

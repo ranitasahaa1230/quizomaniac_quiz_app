@@ -1,0 +1,21 @@
+.quiz__page {
+  margin-top: 5.5rem;
+}
+
+.quiz__name {
+  text-align: left;
+  color: var(--gray);
+  font-size: 1.7rem;
+  margin-left: 4rem;
+  font-style: italic;
+}
+.question__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  opacity: 0.8;
+}
+
+.question__bold {
+  font-size: 1.7rem;
+}
