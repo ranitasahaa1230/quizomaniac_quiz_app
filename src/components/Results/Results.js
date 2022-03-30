@@ -10,7 +10,7 @@ export const Results = ({scores, names}) => {
     if (!names) {
         navigate("/");
     }
-  }, [names]);
+  }, [names,navigate]);
 
   return (
     <div className="result">
