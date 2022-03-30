@@ -3,7 +3,7 @@ import "./Quiz.css";
 import { CircularProgress } from "@material-ui/core";
 import { Questions } from "../Questions/Questions";
 
-export const Quiz = ({ names, scores, setScores, questions}) => {
+export const Quiz = ({ names, scores, setScores, questions,setQuestions}) => {
     const [options, setOptions] = useState();
     const [currQues, setCurrQues] = useState(0);
   
@@ -12,8 +12,6 @@ export const Quiz = ({ names, scores, setScores, questions}) => {
       };
   
    useEffect(() => {
-    console.log(questions);
-
       setOptions(
         questions &&
           handleShuffle([
@@ -41,6 +39,7 @@ export const Quiz = ({ names, scores, setScores, questions}) => {
             correct={questions[currQues]?.correct_answer}
             scores={scores}
             setScores={setScores}
+            setQuestions={setQuestions}
           />
         </>
       ) : (

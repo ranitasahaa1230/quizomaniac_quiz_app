@@ -1,13 +1,14 @@
 .quiz__page {
   margin-top: 5.5rem;
-  color: var(--gray);
 }
 
 .quiz__name {
-  text-align: center;
-  color: var(--black-bg);
+  text-align: left;
+  color: var(--gray);
   font-size: 1.7rem;
+  margin-left: 4rem;
   font-weight: bolder;
+  font-style: italic;
 }
 .question__flex {
   display: flex;
