@@ -28,8 +28,8 @@ export const Quiz = ({ names, scores, setScores, questions,setQuestions}) => {
       {questions ? (
         <>
         <div className="question__flex">
-          <span className="question__bold">{questions[currQues].category}</span>
-          <h3>SCORE : <span className="question__bold">{scores}</span></h3>
+          <h1 className="question__bold">{questions[currQues].category}</h1>
+         <h1 className="question__bold"> SCORE : {scores}</h1>
         </div>
           <Questions 
             currQues={currQues}

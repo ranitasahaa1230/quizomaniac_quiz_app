@@ -1,7 +1,7 @@
 import { Button } from "@material-ui/core";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Error } from "../index";
+import ErrorMessage from "./ErrorMessage";
 import "./Questions.css";
 
 export const Questions = ({
@@ -51,7 +51,7 @@ export const Questions = ({
       <div className="singleQuestion">
         <div className="questionss">{questions[currQues].question}</div>
         <div className="options">
-          {error && <Error />}
+          {error && <ErrorMessage>{error}</ErrorMessage>}
           {options &&
             options.map((i) => (
               <button

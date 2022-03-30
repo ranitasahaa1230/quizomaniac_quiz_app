@@ -18,7 +18,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border: 5px solid grey;
+    border: 5px solid var(--gray);
     padding: 20px;
     margin-top: 10px;
   }
@@ -42,6 +42,7 @@
   }
   .questionss{
     color: var(--secondary-color);
+    font-size: 1.5rem;
   }
   
   @media (max-width: 614px) {
@@ -57,13 +58,13 @@
   }
   
   .select {
-    background-color: rgb(7, 207, 0);
+    background-color: var(--filled-green);
     color: var(--bg-code);
     box-shadow: 0 0 1px var(--black-bg);
   }
   
   .wrong {
-    background-color: rgb(233, 0, 0);
+    background-color: var(--filled-red);
     color: var(--bg-code);
     box-shadow: 0 0 1px var(--black-bg);
   }

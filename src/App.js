@@ -1,6 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { Navbar, Home, Category, RulesPage, Quiz, Login, SignUp } from "./components";
+import { Navbar, Home, Category, RulesPage, Quiz, Login, SignUp, Results } from "./components";
 import axios from "axios";
 import { useState } from "react";
 
@@ -15,6 +15,7 @@ function App() {
         category && `&category=${category}`
       }${difficulty && `&difficulty=${difficulty}`}&type=multiple`
     );
+
     setQuestions(data.results);
   };
 
@@ -24,7 +25,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route
-          path="/category"
+          path="/details"
           element={
             <Category
               names={names}
@@ -45,6 +46,7 @@ function App() {
             />
           }
         />
+        <Route path="/results" element={<Results names={names} scores={scores}/>}/>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
       </Routes>

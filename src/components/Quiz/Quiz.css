@@ -7,7 +7,6 @@
   color: var(--gray);
   font-size: 1.7rem;
   margin-left: 4rem;
-  font-weight: bolder;
   font-style: italic;
 }
 .question__flex {
@@ -17,8 +16,6 @@
   opacity: 0.8;
 }
 
-.question__bold {
+h1.question__bold {
   font-size: 1.7rem;
-  color: var(--black-bg);
-  font-weight: bolder;
 }
