@@ -10,6 +10,8 @@ export const Questions = ({currQues,
     scores,
     setQuestions,}) => {
   return (
-    <div>Questions</div>
+    <div>
+        <div className='question__num'>Question {currQues+1}</div>
+    </div>
   )
 }

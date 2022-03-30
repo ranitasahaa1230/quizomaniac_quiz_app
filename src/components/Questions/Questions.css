@@ -1,0 +1,6 @@
+.question__num{
+    text-align: center;
+    color: var(--darkblue-bg);
+    font-weight: bolder;
+    font-size: 2rem;
+}

@@ -3,33 +3,35 @@ import "./Quiz.css";
 import { CircularProgress } from "@material-ui/core";
 import { Questions } from "../Questions/Questions";
 
-export const Quiz = ({ names, scores, setScores, questions, setQuestions }) => {
-  const [options, setOptions] = useState("");
-  const [currQues, setCurrQues] = useState(0);
+export const Quiz = ({ names, scores, setScores, questions}) => {
+    const [options, setOptions] = useState();
+    const [currQues, setCurrQues] = useState(0);
+  
+    const handleShuffle = (options) => {
+        return options.sort(() => Math.random() - 0.5);
+      };
+  
+   useEffect(() => {
+    console.log(questions);
 
-  useEffect(() => {
-    setOptions(
-      questions &&
-        handleShuffle([
-          questions[currQues]?.correct_answer,
-          ...questions[currQues]?.incorrect_answers,
-        ])
-    );
-  }, [currQues,questions]);
-
-//   console.log(options);
-  const handleShuffle = (option) => {
-    return option.sort(() => Math.random() - 0.5);
-  };
+      setOptions(
+        questions &&
+          handleShuffle([
+            questions[currQues]?.correct_answer,
+            ...questions[currQues]?.incorrect_answers
+          ])
+      );
+    }, [currQues, questions]);
+  
 
   return (
     <div className="quiz__page">
       <div className="quiz__name">Welcome, {names}</div>
       {questions ? (
         <>
-        <div class="question__flex">
-          <span class="question__bold">{questions[currQues].category}</span>
-          <h3>SCORE : <span class="question__bold">{scores}</span></h3>
+        <div className="question__flex">
+          <span className="question__bold">{questions[currQues]?.category}</span>
+          <h3>SCORE : <span className="question__bold">{scores}</span></h3>
         </div>
           <Questions 
             currQues={currQues}
@@ -39,7 +41,6 @@ export const Quiz = ({ names, scores, setScores, questions, setQuestions }) => {
             correct={questions[currQues]?.correct_answer}
             scores={scores}
             setScores={setScores}
-            setQuestions={setQuestions}
           />
         </>
       ) : (

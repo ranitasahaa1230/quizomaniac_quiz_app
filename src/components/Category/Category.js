@@ -12,7 +12,7 @@ export const Category = ({names,setNames,fetchQuestions}) => {
     const navigate = useNavigate();
 
     const handleSubmit=()=>{
-        if(!names || !category || !difficulty){
+        if(!category || !difficulty || !names){
             setError(true)
         }
         else{
