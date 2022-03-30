@@ -49,7 +49,7 @@ export const Questions = ({
     <div className="question">
       <div className="question__num">Question {currQues + 1}:</div>
       <div className="singleQuestion">
-        <div className="questions">{questions[currQues]?.question}</div>
+        <div className="questionss">{questions[currQues].question}</div>
         <div className="options">
           {error && <Error />}
           {options &&
