@@ -1,9 +1,3 @@
-.question__num{
-    color: var(--darkblue-bg);
-    font-weight: bolder;
-    font-size: 2rem;
-}
-
 .question {
     width: 100%;
     display: flex;

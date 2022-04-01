@@ -1,18 +1,19 @@
 import { MenuItem, TextField } from "@material-ui/core";
 import React, { useState } from "react";
-import Categories from "../../assets/images/data";
 import "./Category.css"
 import { useNavigate} from 'react-router-dom'
 import {Error} from "../index";
+import { useQuiz } from "../contexts/quizContext";
 
 export const Category = ({names,setNames,fetchQuestions}) => {
-    const [category,setCategory]=useState('');
     const [difficulty,setDifficulty]=useState('');
     const [error,setError]=useState(false);
     const navigate = useNavigate();
+    const { category} = useQuiz();
+
 
     const handleSubmit=()=>{
-        if(!category || !difficulty || !names){
+        if(!difficulty || !names){
             setError(true)
         }
         else{
@@ -28,19 +29,6 @@ export const Category = ({names,setNames,fetchQuestions}) => {
       {error && <Error/>}
         <TextField label="Enter Your Name" variant="outlined" value={names}
           onChange={(e) => setNames(e.target.value)}/>
-        <TextField
-          select
-          label="Select Category"
-          value={category}
-          onChange={(e) => setCategory(e.target.value)}
-          variant="outlined"
-        >
-          {Categories.map((type) => (
-            <MenuItem key={type.category} value={type.value}>
-              {type.category}
-            </MenuItem>
-          ))}
-        </TextField>
         <TextField
           select
           label="Select Difficulty"

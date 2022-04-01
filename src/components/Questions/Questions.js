@@ -26,7 +26,7 @@ export const Questions = ({
 
   const handleCheck = (option) => {
     setSelected(option);
-    if (option === correct) setScores(scores + 1);
+    if (option === correct) setScores(scores + 10);
     setError(false);
   };
 
@@ -47,7 +47,6 @@ export const Questions = ({
 
   return (
     <div className="question">
-      <div className="question__num">Question {currQues + 1}:</div>
       <div className="singleQuestion">
         <div className="questionss">{questions[currQues].question}</div>
         <div className="options">

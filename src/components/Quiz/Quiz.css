@@ -17,5 +17,13 @@
 }
 
 .question__bold {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
+  color: var(--black-bg);
+  font-weight: bold;
+}
+
+.question__num{
+  color: var(--darkblue-bg);
+  font-weight: bolder;
+  font-size: 1.8rem;
 }
