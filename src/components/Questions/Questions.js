@@ -81,7 +81,7 @@ export const Questions = ({
             style={{ width: 185 }}
             onClick={handleNext}
           >
-            {currQues > 20 ? "Submit" : "Next Question"}
+            {currQues > 8 ? "Submit" : "Next Question"}
           </Button>
         </div>
       </div>

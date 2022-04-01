@@ -4,7 +4,7 @@
 
 .quiz__name {
   text-align: left;
-  color: var(--gray);
+  color: var(--card-color);
   font-size: 1.7rem;
   margin-left: 4rem;
   font-style: italic;
@@ -17,13 +17,17 @@
 }
 
 .question__bold {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   color: var(--black-bg);
-  font-weight: bold;
 }
 
 .question__num{
-  color: var(--darkblue-bg);
   font-weight: bolder;
   font-size: 1.8rem;
+}
+
+h4 {
+  padding: 8px 10px;
+  font-size: 1.68rem;
+  color: var(--footer-color);
 }

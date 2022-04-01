@@ -4,10 +4,7 @@ const QuizContext = createContext();
 
 
 const QuizProvider = ({ children }) => {
-  // const [quizState, quizDispatch] = useReducer(quizReducer, {
-  //   currentCategory: "",
-  //   name: "",
-  // });
+
   const [category, setCategory] = useState([]);
 
   return (

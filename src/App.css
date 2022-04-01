@@ -40,6 +40,7 @@ body {
   --yellow-bg: #ffe7c5;
   --footer-color: #403747;
   --rules:rgb(149, 54, 238);
+  --card-color: #001219;
 }
 
 ::-webkit-scrollbar {
