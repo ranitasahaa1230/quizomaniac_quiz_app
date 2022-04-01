@@ -1,5 +1,4 @@
 import { createContext, useContext, useState } from "react";
-import { quizReducer } from "../reducers/quizReducer";
 
 const QuizContext = createContext();
 
