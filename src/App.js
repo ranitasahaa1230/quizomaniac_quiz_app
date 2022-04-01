@@ -1,6 +1,15 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { Navbar, Home, Category, RulesPage, Quiz, Login, SignUp, Results } from "./components";
+import {
+  Navbar,
+  Home,
+  Category,
+  RulesPage,
+  Quiz,
+  Login,
+  SignUp,
+  Results,
+} from "./components";
 import axios from "axios";
 import { useState } from "react";
 
@@ -46,7 +55,10 @@ function App() {
             />
           }
         />
-        <Route path="/results" element={<Results names={names} scores={scores}/>}/>
+        <Route
+          path="/results"
+          element={<Results names={names} scores={scores} />}
+        />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
       </Routes>

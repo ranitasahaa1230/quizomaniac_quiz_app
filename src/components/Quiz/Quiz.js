@@ -15,8 +15,8 @@ export const Quiz = ({ names, scores, setScores, questions,setQuestions}) => {
       setOptions(
         questions &&
           handleShuffle([
-            questions[currQues]?.correct_answer,
-            ...questions[currQues]?.incorrect_answers
+            questions[currQues].correct_answer,
+            ...questions[currQues].incorrect_answers
           ])
       );
     }, [currQues, questions]);
@@ -28,8 +28,9 @@ export const Quiz = ({ names, scores, setScores, questions,setQuestions}) => {
       {questions ? (
         <>
         <div className="question__flex">
-          <h1 className="question__bold">{questions[currQues].category}</h1>
-         <h1 className="question__bold"> SCORE : {scores}</h1>
+          {/* <h5 className="question__bold">{questions[currQues].category}</h5> */}
+          <div className="question__num">Question {currQues + 1}<span>/{questions.length}:</span></div>
+         <h5 className="question__bold"> SCORE : {scores}</h5>
         </div>
           <Questions 
             currQues={currQues}
