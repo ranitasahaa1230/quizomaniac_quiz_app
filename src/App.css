@@ -51,11 +51,6 @@ body {
   background-color: var(--secondary-color);
 }
 
-/* .primary-text {
-  color: var(--text-color);
-  font-size: 1.2rem;
-} */
-
 a {
   text-decoration: none;
   color: var(--gray);
@@ -115,23 +110,9 @@ h3 {
   .profile-name {
     flex-flow: column;
   }
-  .profile-name {
-    gap: 2rem;
-  }
+  
   header .class-form {
     width: 100%;
     margin: 1.5rem 0;
-  }
-  section,
-  .form-box {
-    margin-top: 18rem;
-  }
-  .main-quiz,
-  .rules__section,
-  .section__question,
-  .answer__section,
-  .profile-section,
-  .score-board {
-    margin-top: 20rem;
   }
 }
