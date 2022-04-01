@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 5rem;
+    margin-top: 3.8rem;
   }
   .quiz-section {
     line-height: 1.6;
@@ -15,12 +15,12 @@
     height: auto;
   }
   h2 {
-    color: var(--primary-color);
+    color: var(--black-bg);
   }
   button.explore-btn {
     color: var(--bg-code);
     padding: 1rem 1.4rem;
-    background: var(--primary-color);
+    background: var(--primaryy-color);
     border: none;
     font-size: 1.15rem;
     border-radius: 2rem;

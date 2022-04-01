@@ -5,7 +5,8 @@ import rules from "../../assets/images/rules.jpg";
 
 export const RulesPage = () => {
   return (
-    <div className="rules__page">
+    <div className="rules_section">
+      <div className="rules__page">
       <div className="rules__images">
         <img src={rules} className="rules__image" alt="rules" />
       </div>
@@ -39,6 +40,7 @@ export const RulesPage = () => {
           </div>
         </ul>
       </div>
+    </div>
     </div>
   );
 };

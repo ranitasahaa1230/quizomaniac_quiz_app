@@ -14,7 +14,10 @@ export const Results = ({scores, names}) => {
 
   return (
     <div className="result">
-        <h1>Final Score : {scores}</h1>
+        <h1>Final Score : {scores}/100</h1>
+        <div>
+          <h5>Questions you answered correctly:</h5>
+        </div>
         <Button
         variant="contained"
         color="secondary"

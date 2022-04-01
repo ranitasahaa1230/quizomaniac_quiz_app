@@ -6,6 +6,7 @@ import {Error} from "../index";
 import { useQuiz } from "../contexts/quizContext";
 
 export const Category = ({names,setNames,fetchQuestions}) => {
+
     const [difficulty,setDifficulty]=useState('');
     const [error,setError]=useState(false);
     const navigate = useNavigate();
@@ -24,8 +25,9 @@ export const Category = ({names,setNames,fetchQuestions}) => {
     }
     
   return (
-    <div className="settings">
-      <div className="settings__select">
+     <div className="setting__cat">
+     <div className="settingss">
+     <div className="settings__select">
       {error && <Error/>}
         <TextField label="Enter Your Name" variant="outlined" value={names}
           onChange={(e) => setNames(e.target.value)}/>
@@ -41,7 +43,8 @@ export const Category = ({names,setNames,fetchQuestions}) => {
         <MenuItem key="Hard" value="hard">Hard</MenuItem>
         </TextField>
                 <button className="explore-btn btns-explore" onClick={handleSubmit}>Start Quiz</button>
-      </div>
+     </div>
+    </div>
     </div>
   );
 };

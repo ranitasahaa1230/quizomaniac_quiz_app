@@ -8,7 +8,8 @@ export const Categories = () => {
   const { setCategory } = useQuiz();
 
   return (
-    <main className="main-quiz" id="main-quiz">
+    <div className="sections">
+      <main className="main-quiz" id="main-quiz">
       <h2 className="categories">Categories</h2>
       <div className="card__flex">
         {data.map(({id,img,alt,categoryName,description,category}) => (
@@ -26,5 +27,6 @@ export const Categories = () => {
         ))}
       </div>
     </main>
+    </div>
   );
 };

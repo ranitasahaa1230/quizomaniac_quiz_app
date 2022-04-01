@@ -5,8 +5,7 @@ import { Categories, Footer } from "../index";
 
 export const Home = () => {
   return (
-    <div>
-      <section>
+    <div className="sections">
         <div className="section-bar">
           <div>
             <h2>Welcome to Quizomaniac Quiz</h2>
@@ -28,7 +27,6 @@ export const Home = () => {
             />
           </div>
         </div>
-      </section>
       <Categories/>
       <Footer />
     </div>

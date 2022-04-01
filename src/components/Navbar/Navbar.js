@@ -1,11 +1,15 @@
 import React from "react";
-import { Link } from 'react-router-dom'
-import "./Navbar.css"
-import favicon from "../../assets/images/favicon.png"
+import { Link } from "react-router-dom";
+import "./Navbar.css";
+import favicon from "../../assets/images/favicon.png";
+import { useTheme } from "../contexts/themeContext";
 
 export const Navbar = () => {
+  const { theme, updateTheme } = useTheme();
+
   return (
     <div>
+      {" "}
       <header>
         <div id="menu-bar" className="fas fa-bars menu-bar"></div>
         <div className="logo-header">
@@ -31,18 +35,27 @@ export const Navbar = () => {
             className="search-input"
             placeholder="Search for your favorite quizzes..."
           />
-          <label htmlFor="search-bar" className="fas fa-search search-label"></label>
+          <label
+            htmlFor="search-bar"
+            className="fas fa-search search-label"
+          ></label>
         </form>
 
         <div className="font-icons">
+          <span onClick={() => updateTheme()}>
+            <span>
+              {theme ? (
+                <i className="fa-solid fa-moon social-quizicons light"></i>
+              ) : (
+                <i className="fa-solid fa-sun social-quizicons dark"></i>
+              )}
+            </span>
+          </span>
           <Link
             to="./login"
             className="fa-solid fa-right-to-bracket social-quizicons"
           ></Link>
-          <Link
-            to="/signup"
-            className="fas fa-user social-quizicons"
-          ></Link>
+          <Link to="/signup" className="fas fa-user social-quizicons"></Link>
         </div>
       </header>
     </div>
