@@ -3,10 +3,12 @@ import { data } from "../../assets/images/data";
 import "./Categories.css";
 import { Link } from "react-router-dom";
 import { useQuiz } from "../contexts/quizContext";
+import { getSearchedProducts } from "../reducers/search";
 
 export const Categories = () => {
-  const { setCategory } = useQuiz();
-
+  const {setCategory,quizState:{searchQuery}}=useQuiz();
+  // const searchedProductList=getSearchedProducts(data,searchQuery)
+  // console.log(searchedProductList)
   return (
     <div className="sections">
       <main className="main-quiz" id="main-quiz">
