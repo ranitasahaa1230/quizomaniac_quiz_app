@@ -8,6 +8,7 @@
 .rules__image {
   width: 100%;
   margin: 4rem 0.5rem;
+  border-radius: 1rem;
 }
 
 .rules__section,
