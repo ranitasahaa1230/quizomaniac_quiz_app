@@ -40,7 +40,7 @@ body {
   --red-bg: #dc3545;
   --yellow-bg: #ffe7c5;
   --footer-color: #403747;
-  --rules:rgb(149, 54, 238);
+  --rules: rgb(149, 54, 238);
   --card-color: #001219;
   --primaryy-color: #3f37c9;
 }
@@ -54,8 +54,7 @@ body {
   background-color: var(--secondary-color);
 }
 
-
-.background__light{
+.background__light {
   --primary-color: #3f37c9;
   --black-bg: #000814;
   --yellow-bg: #ffe7c5;
@@ -66,19 +65,19 @@ body {
   --filled-green: #ac4ff4;
 }
 
-.background__dark{
-  --primary-color:#333333;
-  --black-bg:#fafafa;
-  --bg:#000814;
+.background__dark {
+  --primary-color: #333333;
+  --black-bg: #fafafa;
+  --bg: #000814;
   --primaryy-color: #3f37c9;
-  --card-color:#fafafa;
-  --footers-color:#fafafa;
-  --yellow-bg:rgb(149, 54, 238);
+  --card-color: #fafafa;
+  --footers-color: #fafafa;
+  --yellow-bg: rgb(149, 54, 238);
   --filled-green: #38b000;
-  --darkblue-bg:#e06016;
+  --darkblue-bg: #e06016;
 }
 
-.sections{
+.sections {
   background-color: var(--bg);
   color: var(--black-bg);
   height: auto;
@@ -142,7 +141,7 @@ h3 {
   .profile-name {
     flex-flow: column;
   }
-  
+
   header .class-form {
     width: 100%;
     margin: 1.5rem 0;
