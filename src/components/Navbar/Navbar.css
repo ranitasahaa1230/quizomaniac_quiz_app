@@ -9,7 +9,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 5px 12px var(--black-bg);
+    box-shadow: 0 0 2px var(--black-bg);
   }
   
   header .logo {
@@ -94,3 +94,8 @@ header {
     color: var(--secondary-color);
     cursor: pointer;
   }  
+.social-quizcons{
+  color: var(--bg-code);
+  font-size: 1.2rem;
+  cursor: pointer;
+}

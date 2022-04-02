@@ -4,9 +4,9 @@ import logo from "../../assets/images/logo.jpg"
 import { Categories, Footer } from "../index";
 
 export const Home = () => {
+
   return (
-    <div>
-      <section>
+    <div className="sections">
         <div className="section-bar">
           <div>
             <h2>Welcome to Quizomaniac Quiz</h2>
@@ -27,8 +27,7 @@ export const Home = () => {
               alt="quiz"
             />
           </div>
-        </div>
-      </section>
+          </div>
       <Categories/>
       <Footer />
     </div>

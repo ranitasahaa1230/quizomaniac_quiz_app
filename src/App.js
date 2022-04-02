@@ -12,8 +12,10 @@ import {
 } from "./components";
 import axios from "axios";
 import { useState } from "react";
+import { useTheme } from "./components/contexts/themeContext";
 
 function App() {
+  const { theme } = useTheme();
   const [names, setNames] = useState("");
   const [questions, setQuestions] = useState("");
   const [scores, setScores] = useState(0);
@@ -29,7 +31,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className={`${theme ? "background__dark" : "background__light"}`}>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

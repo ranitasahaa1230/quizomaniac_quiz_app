@@ -2,6 +2,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 90vh;
+    height: 100vh;
     text-align: center;
+  }
+  .result_section{
+    background-color: var(--bg);
+    color: var(--black-bg);
   }

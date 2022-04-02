@@ -22,13 +22,14 @@ export const Quiz = ({ names, scores, setScores, questions, setQuestions }) => {
   }, [currQues, questions]);
 
   return (
-    <div className="quiz__page">
+    <div className="quiz__sections">
+      <div className="quiz__page">
       <div className="quiz__name">Welcome, {names}</div>
       {questions ? (
         <>
           <div className="question__flex">
-            <h4>QUESTION:<span class="question__bold"> {currQues + 1}</span>/{questions.length}</h4>
-            <h4>SCORE : <span class="question__bold">{scores}</span></h4>
+            <h4>QUESTION:<span className="question__bold"> {currQues + 1}</span>/{questions.length}</h4>
+            <h4>SCORE : <span className="question__bold">{scores}</span></h4>
           </div>
           <Questions
             currQues={currQues}
@@ -49,6 +50,7 @@ export const Quiz = ({ names, scores, setScores, questions, setQuestions }) => {
           thickness={1}
         />
       )}
+    </div>
     </div>
   );
 };

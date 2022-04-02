@@ -2,8 +2,8 @@
     width: 100%;
     max-width: 32rem;
     position: relative;
-    top: 3.8rem;
-    margin: 5rem auto;
+    top: 4rem;
+    margin: 4rem auto;
     padding: 12px 0;
     border-radius: 1rem;
     box-shadow: 0 0 10px 0 var(--primary-color);
@@ -15,7 +15,7 @@
   }
   .toggle-btn {
     padding: 4px 0;
-    color: var(--primary-color);
+    color: var(--primaryy-color);
     font-size: 1.8rem;
   }
 
@@ -35,6 +35,9 @@
     padding: 0.5rem 0.7rem;
     font-size: 1rem;
   }
+  .section_login{
+
+  }
    
   .password-label{
     width: 100%;
@@ -53,7 +56,7 @@
     cursor: pointer;
     padding: 10px 3rem;
     margin: 0.5rem 4.5rem;
-    background: var(--primary-color);
+    background: var(--primaryy-color);
     border: 0;
     outline: none;
     color: var(--bg-code);
@@ -86,11 +89,17 @@
   .primary-account {
     color: var(--black-bg);
     text-decoration: none;
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primaryy-color);
     margin-left: 0.5rem;
   }
   .forget-psswd{
-      color: var(--primary-color);
+      color: var(--primaryy-color);
       font-size: 1rem;
       margin-left: 4rem;
+  }
+
+  .section_login{
+    height: 100vh;
+  background-color: var(--bg);
+  color: var(--black-bg);
   }

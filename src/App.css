@@ -12,7 +12,6 @@
 }
 
 html {
-  /* font-size: 62.5%; */
   overflow-x: hidden;
   scroll-padding-top: 6rem;
   scroll-behavior: smooth;
@@ -24,6 +23,8 @@ body {
 
 :root {
   --gray: #3e4152;
+  --primary-hover: #ac4ff4;
+  --footers-color: #51435c;
   --primary-color: #3f37c9;
   --text-color: #007fff;
   --secondary-color: #0096c7;
@@ -41,6 +42,7 @@ body {
   --footer-color: #403747;
   --rules:rgb(149, 54, 238);
   --card-color: #001219;
+  --primaryy-color: #3f37c9;
 }
 
 ::-webkit-scrollbar {
@@ -52,6 +54,32 @@ body {
   background-color: var(--secondary-color);
 }
 
+
+.background__light{
+  --primary-color: #3f37c9;
+  --black-bg: #000814;
+  --yellow-bg: #ffe7c5;
+  --footers-color: #403747;
+  --card-color: #001219;
+  --bg: #fefefe;
+  --primaryy-color: #3f37c9;
+}
+
+.background__dark{
+  --primary-color:#333333;
+  --black-bg:#fafafa;
+  --bg:#000814;
+  --primaryy-color: #3f37c9;
+  --card-color:#fafafa;
+  --footers-color:#fafafa;
+  --yellow-bg:rgb(149, 54, 238);
+}
+
+.sections{
+  background-color: var(--bg);
+  color: var(--black-bg);
+  height: auto;
+}
 a {
   text-decoration: none;
   color: var(--gray);

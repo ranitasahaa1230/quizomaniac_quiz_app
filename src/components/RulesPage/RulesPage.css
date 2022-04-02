@@ -3,9 +3,11 @@
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   margin-top: 2.5rem;
+  margin-left: 2rem;
 }
 .rules__image {
   width: 100%;
+  margin: 4rem 0.5rem;
 }
 
 .rules__section,
@@ -29,6 +31,11 @@ h2.rules {
   text-align: left;
   font-size: 1.4rem;
   line-height: 1.9;
+}
+.rules_section{
+  height: 100vh;
+  background-color: var(--bg);
+  color: var(--black-bg);
 }
 .star {
   font-size: 1.2rem;
@@ -57,12 +64,16 @@ h2.rules {
 }
 
 @media (max-width: 1248px) {
+  .rules_section{
+    height: auto;
+  }
   .rules__page {
     display: flex;
     flex-direction: column;
   }
   .rules__image {
-    width: 100%;
+    width: 80%;
+    margin:4rem 5rem;
   }
   .rules__section {
     margin: auto;

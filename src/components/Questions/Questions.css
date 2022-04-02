@@ -4,7 +4,10 @@
     flex-direction: column;
     align-items: center;
   }
-  
+  .question_section{
+    background-color: var(--bg);
+  color: var(--black-bg);
+  }
   .singleQuestion {
     width: 95%;
     min-height: 350px;

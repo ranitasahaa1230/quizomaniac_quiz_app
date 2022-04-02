@@ -1,9 +1,13 @@
 import React from "react";
-import { Link } from 'react-router-dom'
-import "./Navbar.css"
-import favicon from "../../assets/images/favicon.png"
+import { Link, useLocation } from "react-router-dom";
+import "./Navbar.css";
+import favicon from "../../assets/images/favicon.png";
+import { useTheme } from "../contexts/themeContext";
 
 export const Navbar = () => {
+  const { theme, updateTheme } = useTheme();
+  const { pathname } = useLocation();
+
   return (
     <div>
       <header>
@@ -24,25 +28,38 @@ export const Navbar = () => {
           </Link>
         </nav>
 
-        <form action="" className="class-form">
-          <input
-            type="search"
-            id="search-bar"
-            className="search-input"
-            placeholder="Search for your favorite quizzes..."
-          />
-          <label htmlFor="search-bar" className="fas fa-search search-label"></label>
-        </form>
+        {pathname === "/" ? (
+          <form action="" className="class-form">
+            <input
+              type="search"
+              id="search-bar"
+              className="search-input"
+              placeholder="Search for your favorite quizzes..."
+            />
+            <label
+              htmlFor="search-bar"
+              className="fas fa-search search-label"
+            ></label>
+          </form>
+        ) : (
+          ""
+        )}
 
         <div className="font-icons">
+          <span onClick={() => updateTheme()}>
+            <span>
+              {theme ? (
+                <i className="fa-solid fa-sun social-quizcons"></i>
+              ) : (
+                <i className="fa-solid fa-moon social-quizcons"></i>
+              )}
+            </span>
+          </span>
           <Link
             to="./login"
             className="fa-solid fa-right-to-bracket social-quizicons"
           ></Link>
-          <Link
-            to="/signup"
-            className="fas fa-user social-quizicons"
-          ></Link>
+          <Link to="/signup" className="fas fa-user social-quizicons"></Link>
         </div>
       </header>
     </div>
