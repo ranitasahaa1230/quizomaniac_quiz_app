@@ -94,3 +94,8 @@ header {
     color: var(--secondary-color);
     cursor: pointer;
   }  
+.social-quizcons{
+  color: var(--bg-code);
+  font-size: 1.2rem;
+  cursor: pointer;
+}

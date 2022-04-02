@@ -49,9 +49,9 @@ export const Navbar = () => {
           <span onClick={() => updateTheme()}>
             <span>
               {theme ? (
-                <i className="fa-solid fa-moon social-quizicons light"></i>
+                <i className="fa-solid fa-sun social-quizcons"></i>
               ) : (
-                <i className="fa-solid fa-sun social-quizicons dark"></i>
+                <i className="fa-solid fa-moon social-quizcons"></i>
               )}
             </span>
           </span>

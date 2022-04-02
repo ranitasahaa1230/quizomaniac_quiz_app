@@ -4,7 +4,7 @@ import "./Auth.css"
 
 export function SignUp() {
   return (
-    <div>
+    <div className='section_login'>
         <div className="form-box">
       <div className="button-box">
         <h3 className="toggle-btn">SIGN UP</h3>

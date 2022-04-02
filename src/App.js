@@ -32,7 +32,6 @@ function App() {
 
   return (
     <div className={`${theme ? "background__dark" : "background__light"}`}>
-      {" "}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
