@@ -24,6 +24,7 @@ body {
 :root {
   --gray: #3e4152;
   --primary-hover: #ac4ff4;
+  --footers-color: #51435c;
   --primary-color: #3f37c9;
   --text-color: #007fff;
   --secondary-color: #0096c7;
@@ -68,7 +69,7 @@ body {
   --primary-color: #3f37c9;
   --black-bg: #000814;
   --yellow-bg: #ffe7c5;
-  --footer-color: #403747;
+  --footers-color: #403747;
   --card-color: #001219;
   --bg: #fefefe;
 }
@@ -79,7 +80,7 @@ body {
   --bg:#000814;
   --primaryy-color: #3f37c9;
   --card-color:#fafafa;
-  --footer-color:#fafafa;
+  --footers-color:#fafafa;
   --yellow-bg:rgb(149, 54, 238);
 }
 
