@@ -63,6 +63,7 @@ body {
   --card-color: #001219;
   --bg: #fefefe;
   --primaryy-color: #3f37c9;
+  --filled-green: #ac4ff4;
 }
 
 .background__dark{
@@ -73,6 +74,8 @@ body {
   --card-color:#fafafa;
   --footers-color:#fafafa;
   --yellow-bg:rgb(149, 54, 238);
+  --filled-green: #38b000;
+  --darkblue-bg:#e06016;
 }
 
 .sections{

@@ -45,7 +45,7 @@ export function SignUp() {
         <button type="submit" className="submit-loginbtns">REGISTER</button>
         <div className="input-account">
           Already registered?
-          <Link to="/login" className="primary-account">Login Here</Link>
+          <Link to="/not" className="primary-account">Login Here</Link>
         </div>
       </form>
     </div>

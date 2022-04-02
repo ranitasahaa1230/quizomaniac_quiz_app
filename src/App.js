@@ -9,6 +9,7 @@ import {
   Login,
   SignUp,
   Results,
+  NotFound,
 } from "./components";
 import axios from "axios";
 import { useState } from "react";
@@ -63,6 +64,7 @@ function App() {
         />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );

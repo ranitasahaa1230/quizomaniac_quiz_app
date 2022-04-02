@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, NavLink } from "react-router-dom";
 import "./Navbar.css";
 import favicon from "../../assets/images/favicon.png";
 import { useTheme } from "../contexts/themeContext";
@@ -22,12 +22,12 @@ export const Navbar = () => {
         </div>
 
         <nav className="navbar">
-          <Link to="/" className="href">
+          <NavLink to="/" className="href">
             <i className="fas fa-home social-quizicons"></i>Home
-          </Link>
-          <Link to="#" className="href">
+          </NavLink>
+          <NavLink to="/dashboard" className="href">
             <i className="fas fa-chart-line social-quizicons"></i>Dashboard
-          </Link>
+          </NavLink>
         </nav>
 
         {pathname === "/" ? (
@@ -60,11 +60,11 @@ export const Navbar = () => {
               )}
             </span>
           </span>
-          <Link
+          <NavLink
             to="./login"
             className="fa-solid fa-right-to-bracket social-quizicons"
-          ></Link>
-          <Link to="/signup" className="fas fa-user social-quizicons"></Link>
+          ></NavLink>
+          <NavLink to="/signup" className="fas fa-user social-quizicons"></NavLink>
         </div>
       </header>
     </div>
