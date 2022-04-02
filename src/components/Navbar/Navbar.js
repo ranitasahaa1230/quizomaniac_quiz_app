@@ -9,7 +9,6 @@ export const Navbar = () => {
 
   return (
     <div>
-      {" "}
       <header>
         <div id="menu-bar" className="fas fa-bars menu-bar"></div>
         <div className="logo-header">

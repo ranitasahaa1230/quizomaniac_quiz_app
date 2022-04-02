@@ -13,7 +13,8 @@ export const Results = ({scores, names}) => {
   }, [names,navigate]);
 
   return (
-    <div className="result">
+    <div className='result_section'>
+      <div className="result">
         <h1>Final Score : {scores}/100</h1>
         <div>
           <h5>Questions you answered correctly:</h5>
@@ -27,6 +28,7 @@ export const Results = ({scores, names}) => {
       >
         Go to homepage
       </Button>
+    </div>
     </div>
   )
 }

@@ -7,7 +7,7 @@
 }
 .rules__image {
   width: 100%;
-  margin-top: 4rem;
+  margin: 4rem 0.5rem;
 }
 
 .rules__section,
@@ -33,7 +33,7 @@ h2.rules {
   line-height: 1.9;
 }
 .rules_section{
-  height: auto;
+  height: 100vh;
   background-color: var(--bg);
   color: var(--black-bg);
 }
@@ -64,12 +64,16 @@ h2.rules {
 }
 
 @media (max-width: 1248px) {
+  .rules_section{
+    height: auto;
+  }
   .rules__page {
     display: flex;
     flex-direction: column;
   }
   .rules__image {
-    width: 100%;
+    width: 80%;
+    margin:4rem 5rem;
   }
   .rules__section {
     margin: auto;

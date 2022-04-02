@@ -1,11 +1,18 @@
+.quiz__sections{
+  height: 100vh;
+  background-color: var(--bg);
+  color: var(--black-bg);
+}
+
 .quiz__page {
-  margin-top: 5.5rem;
+  margin-top: 4rem;
 }
 
 .quiz__name {
   text-align: left;
   color: var(--card-color);
   font-size: 1.7rem;
+  padding-top: 2rem;
   margin-left: 4rem;
   font-style: italic;
 }

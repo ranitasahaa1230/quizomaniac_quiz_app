@@ -15,7 +15,7 @@ import { useState } from "react";
 import { useTheme } from "./components/contexts/themeContext";
 
 function App() {
-  const { theme} = useTheme();
+  const { theme } = useTheme();
   const [names, setNames] = useState("");
   const [questions, setQuestions] = useState("");
   const [scores, setScores] = useState(0);
@@ -31,9 +31,7 @@ function App() {
   };
 
   return (
-    <div 
-    className={`${theme ? "background__dark" : "background__light"}`}
-    >
+    <div className={`${theme ? "background__dark" : "background__light"}`}>
       {" "}
       <Navbar />
       <Routes>

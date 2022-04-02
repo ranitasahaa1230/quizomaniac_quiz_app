@@ -27,3 +27,13 @@
     align-items: center;
     height: 100vh;
 }
+
+.MuiInputBasee-input {
+  color: var(--darkblue-bg);
+  background-color: var(--bg-code);
+}
+
+.Mui-dark{
+  background: var(--bg-code);
+  color: var(--bg-code);
+}

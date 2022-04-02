@@ -94,11 +94,3 @@ header {
     color: var(--secondary-color);
     cursor: pointer;
   }  
-
-  .nav__dark{
-    background: red;
-  }
-
-  .nav__light{
-    background: blue;
-  }

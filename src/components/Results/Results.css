@@ -5,3 +5,7 @@
     height: 90vh;
     text-align: center;
   }
+  .result_section{
+    background-color: var(--bg);
+    color: var(--black-bg);
+  }

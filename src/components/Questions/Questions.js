@@ -46,9 +46,10 @@ export const Questions = ({
   };
 
   return (
-    <div className="question">
+    <div className="question_section">
+      <div className="question">
       <div className="singleQuestion">
-        <div className="questionss">{questions[currQues].question}</div>
+        {/* <div className="questionss">{questions[currQues].question}</div> */}
         <div className="options">
           {error && <ErrorMessage>{error}</ErrorMessage>}
           {options &&
@@ -85,6 +86,7 @@ export const Questions = ({
           </Button>
         </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -22,7 +22,7 @@ export const Quiz = ({ names, scores, setScores, questions, setQuestions }) => {
   }, [currQues, questions]);
 
   return (
-    <div className="sections">
+    <div className="quiz__sections">
       <div className="quiz__page">
       <div className="quiz__name">Welcome, {names}</div>
       {questions ? (
