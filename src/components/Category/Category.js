@@ -31,12 +31,12 @@ export const Category = ({names,setNames,fetchQuestions}) => {
      <div className="settings__select">
       {error && <Error/>}
         <TextField label="Enter Your Name" variant="outlined" value={names}
-          onChange={(e) => setNames(e.target.value)} className={`${theme ? "Mui-dark" : "MuiInputBasee-input"}`}/>
+          onChange={(e) => setNames(e.target.value)} className={`${theme ? "Mui-dark" : ""}`}/>
         <TextField
           select
           label="Select Difficulty"
           variant="outlined"
-          className={`${theme ? "Mui-dark" : "MuiInputBasee-input"}`}
+          className={`${theme ? "Mui-dark" : ""}`}
           value={difficulty}
           onChange={(e) => setDifficulty(e.target.value)}
         >

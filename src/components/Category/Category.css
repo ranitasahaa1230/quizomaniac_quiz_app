@@ -1,39 +1,39 @@
-.settings__select{
- display: flex;
+.settings__select {
+  display: flex;
   flex-direction: column;
   padding: 2rem;
-  margin:auto;
+  margin: auto;
   width: 60%;
   flex: 0.5;
   justify-content: space-evenly;
   gap: 1.6rem;
   border: 2px solid var(--darkblue-bg);
+  font-size: 2rem;
 }
-.setting__cat{
-    background-color: var(--bg);
+.setting__cat {
+  background-color: var(--bg);
   color: var(--black-bg);
   height: 100vh;
 }
 
-.btns-explore{
-    width: 60%;
-    border-radius: 12px !important; 
-    margin: 1rem auto !important;
+.btns-explore {
+  width: 60%;
+  border-radius: 12px !important;
+  margin: 1rem auto !important;
 }
 
-.settingss{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.settingss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.MuiInputBasee-input {
-  color: var(--darkblue-bg);
-  background-color: var(--bg-code);
-}
-
-.Mui-dark{
+.Mui-dark {
   background: var(--bg-code);
   color: var(--bg-code);
+}
+
+.MuiInputLabel-outlined.MuiInputLabel-shrink {
+  transform: translate(14px, -15px) scale(0.75) !important;
 }
