@@ -59,3 +59,14 @@
   .text:hover {
     opacity: 1;
   }
+  .text__quiz{
+    color: var(--bg-code);
+    background: var(--rules);
+    border: none;
+    padding: 10px 14px;
+    margin-top: 0.8rem;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    opacity: 0.8;
+  }

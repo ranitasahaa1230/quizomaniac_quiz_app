@@ -3,6 +3,6 @@ export const quizReducer=(quizState,action)=>{
         case "FILTER_BY_SEARCH":
             return { ...quizState, searchQuery: action.payload };
         default:
-            return quizState;
+          throw new Error(`Unknown action type: ${action.type}`);
     }
 }

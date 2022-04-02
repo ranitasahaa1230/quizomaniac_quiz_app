@@ -3,15 +3,18 @@ import { data } from "../../assets/images/data";
 import "./Categories.css";
 import { Link } from "react-router-dom";
 import { useQuiz } from "../contexts/quizContext";
+import { getSearchedProducts } from "../reducers/search";
 
 export const Categories = () => {
-  const {setCategory}=useQuiz();
+  const {setCategory,quizState:{searchQuery}}=useQuiz();
+  const getCategories=(getSearchedProducts(data,searchQuery))
+
   return (
     <div className="sections">
       <main className="main-quiz" id="main-quiz">
       <h2 className="categories">Categories</h2>
       <div className="card__flex">
-        {data.map(({id,img,alt,categoryName,description,category}) => (
+        {getCategories.length ? getCategories.map(({id,img,alt,categoryName,description,category}) => (
           <div className="card" key={id}>
             <img src={img} alt={alt} className="card__img" />
             <h3>{categoryName}</h3>
@@ -23,7 +26,7 @@ export const Categories = () => {
               </Link>
             </div>
           </div>
-        ))}
+        )) : (<div className="text__quiz">No quizzes found.Try after some time...</div>)}
       </div>
     </main>
     </div>

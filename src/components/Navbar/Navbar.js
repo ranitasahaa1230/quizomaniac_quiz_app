@@ -3,10 +3,12 @@ import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import favicon from "../../assets/images/favicon.png";
 import { useTheme } from "../contexts/themeContext";
+import { useQuiz } from "../contexts/quizContext";
 
 export const Navbar = () => {
   const { theme, updateTheme } = useTheme();
   const { pathname } = useLocation();
+  const {quizDispatch}=useQuiz();
 
   return (
     <div>
@@ -35,6 +37,9 @@ export const Navbar = () => {
               id="search-bar"
               className="search-input"
               placeholder="Search for your favorite quizzes..."
+              onChange={(e) =>
+                quizDispatch({ type: "FILTER_BY_SEARCH", payload: e.target.value })
+              }
             />
             <label
               htmlFor="search-bar"
