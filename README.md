@@ -10,6 +10,14 @@ Bored? Want to have fun? Participate in the quizzes handpicked for you
 
 - Home Page
 - Quizzes by Category
-Rules Page for while attempting Quiz
-MCQ based Quiz Question Page
-Result Page with Answers & Score
+- Rules Page for while attempting Quiz
+- MCQ based Quiz Question Page
+- Result Page with Answers & Score
+- Search Quiz
+- Quit Quiz
+- Quiz Board - Total Score
+- Authentication
+   - Sign-up
+   - Login
+   - Logout
+- Added Dark Theme
