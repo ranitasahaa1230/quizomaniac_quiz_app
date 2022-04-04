@@ -6,7 +6,7 @@
 
 Bored? Want to have fun? Participate in the quizzes handpicked for you
 
-## Contains
+## **Features -**
 
 - Home Page
 - Quizzes by Category
@@ -21,6 +21,13 @@ Bored? Want to have fun? Participate in the quizzes handpicked for you
   - Login
   - Logout
 - Added Dark Theme(Persisting Dark / Light Mode )
+
+## **Built with -**
+
+- React JS
+- React Context API + useReducer
+- React Router v6
+- Vanilla CSS integrated with Kolpotoru UI Component Library and Material UI
 
 ## Live Link
 
