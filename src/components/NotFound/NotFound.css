@@ -12,3 +12,16 @@
     color: var(--rules);
     border-bottom: 4px solid var(--filled-green);
 }
+
+.not__found img{
+    height: 60%;
+    margin: 2rem;
+    border-radius: 2rem;
+}
+
+@media (max-width: 1251px) {
+    .not__found{
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+}
