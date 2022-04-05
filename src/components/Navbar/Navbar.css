@@ -28,7 +28,7 @@ header .navbar a {
 }
 
 header .navbar a:hover {
-  color: var(--black-bg);
+  color: var(--black);
 }
 
 header .class-form {
@@ -58,7 +58,7 @@ header form .search-label {
 }
 
 header form label:hover {
-  color: var(--black-bg);
+  color: var(--black);
 }
 
 header .font-icons a {
@@ -67,8 +67,8 @@ header .font-icons a {
   margin-left: 2rem;
 }
 
-header .font-icons a:hover {
-  color: var(--black-bg);
+header .font-icons a:hover, header .font-icons i:hover {
+  color: var(--black);
 }
 .logo-header {
   display: flex;

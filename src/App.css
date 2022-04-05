@@ -63,6 +63,7 @@ body {
   --bg: #fefefe;
   --primaryy-color: #3f37c9;
   --filled-green: #ac4ff4;
+  --black: #000814;
 }
 
 .background__dark {
@@ -75,6 +76,7 @@ body {
   --yellow-bg: rgb(149, 54, 238);
   --filled-green: #38b000;
   --darkblue-bg: #e06016;
+  --black: #ac4ff4;
 }
 
 .sections {
